@@ -62,7 +62,7 @@ app.post('/api/analyze', upload.fields([{ name: 'resume' }, { name: 'jobDescript
                     },
                     { 
                         role: "user", 
-                        content: `Please analyze this resume against the job description and provide feedback in JSON format.\n\nRESUME:\n${resumeText}\n\nJOB DESCRIPTION:\n${jdText}\n\nProvide a match score (0-100%), specific recommendations for improvement, suggested rewrites for key bullet points, and a summary of gaps/opportunities.` 
+                        content: `Please analyze this resume against the job description and provide feedback to align the resume with the job description in JSON format.\n\nRESUME:\n${resumeText}\n\nJOB DESCRIPTION:\n${jdText}\n\nProvide a match score (0-100%), specific recommendations for improvement, suggested rewrites for key bullet points, and a summary of gaps/opportunities.` 
                     }
                 ],
                 model: model,
